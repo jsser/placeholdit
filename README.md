@@ -1,6 +1,6 @@
 # Placeholdit
 
-A Rails view helper for placeholder images via http://placehold.it
+A helper for creating placeholder images via http://placehold.it. Works with Rails, or without.
 
 ## Installation
 
@@ -22,21 +22,25 @@ A basic 500x500 placeholder image:
 		
 		$ <%= placeholdit_image_tag "500" %>
 
+A basic 250x250 placeholder image:
+		
+		$ <%= placeholdit_image_tag "250x250" %>
+
 The same placeholder image with custom text:
 
-		$ <%= placeholdit_image_tag "500", text: "Buy me!" %>
+		$ <%= placeholdit_image_tag "250x250", text: "Buy me!" %>
 
 The same placeholder image with a blue background:
 
-		$ <%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff' %>
+		$ <%= placeholdit_image_tag "250x250", text: "Buy me!", background_color: '#004eff' %>
 
 The same placeholder image with a blue background and red text (not recommended):
 
-		$ <%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff', text_color: '#ff0000' %>
+		$ <%= placeholdit_image_tag "250x250", text: "Buy me!", background_color: '#004eff', text_color: '#ff0000' %>
 
-Alternatively, calling placeholdit will work as well:
+Alternatively, simply calling placeholdit will work just the same:
 
-		$ <%= placeholdit "500" %>
+		$ <%= placeholdit "250x250", text: "Look at me!" %>
 
 
 ## Contributing
